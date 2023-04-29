@@ -1,0 +1,12 @@
+<body>
+    <h1>TEACHER PAGE</h1>
+    <form (submit)="onSubmit()" #teacherupdataForm="ngForm" action="">
+      <input type="text" id="teaname" name="Teaname" placeholder=" TeacherName" [(ngModel)]="teacherupData.Teachername"><br>
+      <input type="text" id="teaID" name="TeaID" placeholder="Teacher-ID" [(ngModel)]="teacherupData.TeacherID"><br>
+      <input type="tel" id="mno" name="mno" placeholder="Contact Number" [(ngModel)]="teacherupData.mno"><br>
+      <input type="text" id="addr" name="addr" placeholder="Address" [(ngModel)]="teacherupData.addr"><br>
+      <input type="email" id="emailID" name="emailID" placeholder="Email-ID" [(ngModel)]="teacherupData.emailID"><br>
+      <input type="submit" placeholder="SUBMIT">
+    </form>
+  </body>
+  
