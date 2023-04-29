@@ -1,0 +1,12 @@
+<body>
+    <h1>STUDENT PAGE</h1>
+    <form (submit)="onSubmit()" #loginnupForm="ngForm" action="">
+      <input type="text" id="stuname" name="Usename" placeholder=" StudentName" [(ngModel)]="loginupData.Studentname"><br>
+      <input type="text" id="useID" name="stuID" placeholder="Student-ID" [(ngModel)]="loginupData.StudentID"><br>
+      <input type="tel" id="mno" name="mno" placeholder="Contact Number" [(ngModel)]="loginupData.mno"><br>
+      <input type="text" id="addr" name="addr" placeholder="Address" [(ngModel)]="loginupData.addr"><br>
+      <input type="email" id="emailID" name="emailID" placeholder="Email-ID" [(ngModel)]="loginupData.emailID"><br>
+      <input type="submit" placeholder="SUBMIT">
+    </form>
+  </body>
+  
